@@ -20,5 +20,8 @@
   "homepage": "https://github.com/MassimilianoGasaro/electron-app#readme",
   "devDependencies": {
     "electron": "^35.1.4"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.7"
   }
 }
