@@ -31,6 +31,15 @@ function createWindow() {
 
 }
 
+// Gestisci le richieste IPC
+ipcMain.handle('get-data', async () => {
+  return await getData();
+});
+
+ipcMain.handle('add-data', async (event, data) => {
+  return await addData(data);
+});
+
 app.whenReady().then(() => {
 
     createWindow();
